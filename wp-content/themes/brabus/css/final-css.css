@@ -1,0 +1,50 @@
+/* for workshop section */
+.services-content-block .container .vc_row .vc_col-sm-7{
+    margin-top:100px;
+}   
+@media (max-width: 768px)
+{
+    .services-content-block .container .vc_row .vc_col-sm-7{
+    margin-top:0px;
+}   
+}
+.myimage{
+    margin: 20px ;
+    min-width: 220px;
+}
+.mycard{
+    position: relative;
+    transition: 0.5s all ease;
+    
+}
+.mycard img{
+    opacity: 1;
+    background: #0e0e0e;
+    border: 1px solid #444;
+    padding: 15px;
+    min-height: 135px;
+    transition: 0.5s all ease;
+}
+.mycard small{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    text-align: center;
+    font-size: 600;
+    opacity: 0;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 22px;
+    transition: 0.7s all ease;
+}
+.mycard:hover img{
+    opacity: 0.05;
+        transform: scale(1.2);
+}
+.mycard:hover small{
+    margin-top: -25px;
+        opacity: 1;
+}
+/* for workshop over */

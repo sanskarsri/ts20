@@ -418,8 +418,19 @@ main {
         .navigation-menu .inner .menu ul li {
           display: inline-block;
           margin: 0 20px;
-          padding: 0;
+              /* padding: 0; */
+              padding: 25px 12px;
           list-style: none; }
+
+.icons-fixed ul{
+  display: flex;
+  justify-content: center;
+}
+.icons-fixed ul li{
+  margin: 0px 50px 0 0;
+  list-style: none;
+}
+
           @media (min-width: 768px) {
             .navigation-menu .inner .menu ul li:hover ul {
               opacity: 1;
@@ -430,7 +441,7 @@ main {
           .navigation-menu .inner .menu ul li a {
             display: inline-block;
             line-height: 1;
-            font-size: 3vw;
+            font-size: 2.5vw;
             font-weight: 800;
             color: #fff;
             padding-bottom: 8px;
@@ -915,7 +926,7 @@ header {
 /* NAVBAR */
 .navbar {
   width: 100%;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   padding: 20px 40px;
@@ -953,6 +964,7 @@ header {
           -ms-transition: .25s ease-in-out;
           -o-transition: .25s ease-in-out;
           transition: .25s ease-in-out;
+          /* color: #e8293b; */
           border-bottom: 2px solid transparent; }
           .navbar .left ul li a:hover {
             padding-bottom: 1px;
@@ -976,7 +988,7 @@ header {
     .navbar .logo a {
       float: left; }
       .navbar .logo a img {
-        height: 56px; }
+        height: 40px; }
   .navbar .right {
     width: 30%;
     margin-right: 0; }
@@ -1121,6 +1133,10 @@ header {
   .hamburger_left .logo {
     margin-left: 0; }
 
+ nav.sticky{
+   padding: 10px 20px;
+   background: #181818;
+ }
 /* SLIDE BTN */
 .slide-btn {
   display: block;
@@ -2484,7 +2500,7 @@ header {
     flex-wrap: wrap;
     margin-bottom: 80px; }
     .footer .footer-quote img {
-      height: 60px;
+      height: 45px;
       display: block;
       margin-bottom: 20px; }
     .footer .footer-quote h2 {
@@ -2737,7 +2753,9 @@ header {
 
   .navigation-menu .inner .menu ul li {
     display: block;
-    margin-bottom: 20px; }
+    margin-bottom: 20px; 
+    padding: 8px 5px;
+  }
 
   .navigation-menu .inner .menu ul li a {
     font-size: 9vw;
@@ -2989,3 +3007,20 @@ header.hero-header {
   width: 100vw; }
 
 /*# sourceMappingURL=style.css.map */
+.sponsors-img{
+  min-height: 80px;
+}
+.sponsors-row{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:430px)
+{
+  .sponsors-row{
+    flex-direction: column;
+  }
+  .sponsors-img{
+    width:100%;
+  }
+}
