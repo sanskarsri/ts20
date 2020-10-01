@@ -48,3 +48,38 @@
         opacity: 1;
 }
 /* for workshop over */
+/* for sponsors */
+.sponsor-right{
+    margin-top: 220px;
+}
+#sound{
+    z-index: 4;
+    position: absolute;
+    height: 80px;
+    right: 150px;
+}
+
+@media (max-width:769px)
+{
+    .sponsor-right {
+        margin-top: 350px;
+    }
+}
+@media (max-width:426px)
+{
+    .sponsor-right {
+        margin-top: 30px;
+    }
+    h5 {
+        font-size: 1.1rem;
+    }
+    .container{
+        padding: 30px;
+    }
+    #sound {
+        position: relative;
+        height: 80px;
+        right: 0;
+    }
+    *
+}
