@@ -58,6 +58,7 @@ body {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-size: 17px;
+  cursor: none;
   color: #0e0e0e; }
 
 body.blog {
@@ -419,7 +420,7 @@ main {
           display: inline-block;
           margin: 0 20px;
               /* padding: 0; */
-              padding: 25px 15px;
+              padding: 25px 30px;
           list-style: none; }
 
 .icons-fixed ul{
@@ -2753,7 +2754,7 @@ header {
 
   .navigation-menu .inner .menu ul li {
     display: block;
-    margin-bottom: 20px; 
+    margin-bottom: 10px; 
     padding: 8px 5px;
   }
 
@@ -2995,7 +2996,15 @@ header {
 
   .horizontal-nav-menu-mobile {
     display: block !important;
-    text-align: right; } }
+    text-align: right; } 
+    .navbar {
+      padding: 20px 20px;
+  }
+  .navigation-menu .inner .menu ul li {
+    margin-bottom: 5px;
+    padding: 5px 5px;
+}
+  }
 @media (min-width: 768px) {
   .horizontal-nav-menu-mobile {
     display: none !important; } }
@@ -3023,4 +3032,115 @@ header.hero-header {
   .sponsors-img{
     width:100%;
   }
+}
+ .cursor{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 2px solid red;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  backdrop-filter: grayscale();
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .1s;
+}
+/*
+.cursor2{
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: #c6c6c6;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .15s;
+}
+p:hover ~ .cursor{
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: #c6c6c6;
+  opacity: .5;
+}
+
+p:hover ~ .cursor{
+  opacity: 0;
+} 
+.cursor{
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid black;
+  pointer-events: none;
+  transform: translate(-50%,-50%);
+  transition: 0.3s all ease;
+  transition-property: background,transform;
+  transform-origin: 100% 100%;
+  backdrop-filter: grayscale();
+}*/
+.cursor2{
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: #c6c6c6;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .15s;
+}
+/* .link-grow{
+  transform: scale(5);
+  transform: translate(-50%,-50%);
+  background: black;
+} */
+.link-grow{
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%,-50%);
+  background: transparent;
+  border: 3px dashed #01f7b6;
+}
+.link-grow2{
+  opacity: 0;
+}
+.text-grow{
+  width:40px;
+  height: 40px;
+  /* background-image: url('../images/airplane-flying-svgrepo-com.svg') ; */
+  transform: translate(-50%,-50%);
+  background-position: center;
+  background-size: 40px;
+  /* background: black; */
+  background-repeat: no-repeat;
+  border: 3px dashed #fff;
+  z-index: 2;
+}
+.text-grow2{
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  background: #01f7b588;
+}
+.eventscroll{
+  width:70px;
+  height: 70px;
+  background-image: url('../images/icons8-swipe-100.png') ;
+  backdrop-filter:none;
+  transform: translate(-50%,-50%);
+  background-position: center;
+  background-size: 55px;
+  background-repeat: no-repeat;
+  border: 3px dashed #000;
+  z-index: 2;
+}
+.eventscroll2{
+  width:70px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.219);
+  z-index: 1;
 }
