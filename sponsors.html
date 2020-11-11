@@ -433,7 +433,8 @@
 <!-- audio -->
     <audio id="hamburger-hover" src="wp-content/uploads/2020/06/link.mp3" preload="auto"></audio>
     <!-- audio -->
-
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
     <script>
         window.addEventListener("scroll",function(){
             var nav=document.querySelector("nav");
@@ -459,7 +460,48 @@ var data = {"pre_loader_typewriter":["Please wait","Still loading","Almost done"
 <script type='text/javascript' src='wp-content/themes/brabus/js/scripts7661.js?ver=5.4.2'></script>
 <script type='text/javascript' src='wp-includes/js/wp-embed.min7661.js?ver=5.4.2'></script>
 <script type='text/javascript' src='wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min10df.js?ver=6.2.0'></script>
+<script>
+    var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    let navlinks = document.querySelectorAll(".footer-move");
+    let text = document.querySelectorAll(".text-move");
+    let event = document.querySelectorAll(".eventscroller");
 
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+
+    navlinks.forEach(link => {
+        link.addEventListener('mouseleave', () => {
+            cursor.classList.remove('link-grow');
+            cursor2.classList.remove('link-grow2');
+        });
+        link.addEventListener('mouseover', () => {
+         cursor.classList.add('link-grow');
+         cursor2.classList.add('link-grow2');
+     });
+    }); 
+    text.forEach(link => {
+    link.addEventListener('mouseleave',()=>{
+     cursor.classList.remove('text-grow');
+     cursor2.classList.remove('text-grow2');
+    });
+    link.addEventListener('mouseover',()=>{
+        cursor.classList.add('text-grow');
+        cursor2.classList.add('text-grow2');
+    });
+    });
+    event.forEach(link => {
+        link.addEventListener('mouseleave',()=>{
+         cursor.classList.remove('eventscroll');
+         cursor2.classList.remove('eventscroll2');
+        });
+        link.addEventListener('mouseover',()=>{
+            cursor.classList.add('eventscroll');
+            cursor2.classList.add('eventscroll2');
+        });
+        });
+  </script>
 </body>
 
 </html>
