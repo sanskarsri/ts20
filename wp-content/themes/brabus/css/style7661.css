@@ -3045,6 +3045,7 @@ header.hero-header {
   pointer-events: none;
   transform: translate(-50%, -50%);
   transition: .1s;
+  z-index: 12;
 }
 /*
 .cursor2{
@@ -3092,6 +3093,7 @@ p:hover ~ .cursor{
   pointer-events: none;
   transform: translate(-50%, -50%);
   transition: .15s;
+  z-index: 12;
 }
 /* .link-grow{
   transform: scale(5);
@@ -3118,12 +3120,12 @@ p:hover ~ .cursor{
   /* background: black; */
   background-repeat: no-repeat;
   border: 3px dashed #fff;
-  z-index: 2;
+  z-index: 20;
 }
 .text-grow2{
   width: 60px;
   height: 60px;
-  z-index: 1;
+  z-index: 18;
   background: #01f7b588;
 }
 .eventscroll{
@@ -3136,11 +3138,11 @@ p:hover ~ .cursor{
   background-size: 55px;
   background-repeat: no-repeat;
   border: 3px dashed #000;
-  z-index: 2;
+  z-index: 20;
 }
 .eventscroll2{
   width:70px;
   height: 70px;
   background: rgba(255, 255, 255, 0.219);
-  z-index: 1;
+  z-index: 18;
 }
