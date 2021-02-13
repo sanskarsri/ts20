@@ -3,7 +3,7 @@
 
 @Author: Themezinho
 @URL: http://www.themezinho.net
- 
+
 This file contains the styling for the actual theme, this
 is the file you need to edit to change the look of the
 theme.
@@ -2754,7 +2754,7 @@ header {
 
   .navigation-menu .inner .menu ul li {
     display: block;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     padding: 8px 5px;
   }
 
@@ -2996,7 +2996,7 @@ header {
 
   .horizontal-nav-menu-mobile {
     display: block !important;
-    text-align: right; } 
+    text-align: right; }
     .navbar {
       padding: 20px 20px;
   }
@@ -3068,7 +3068,7 @@ p:hover ~ .cursor{
 
 p:hover ~ .cursor{
   opacity: 0;
-} 
+}
 .cursor{
   position: absolute;
   width: 3rem;
@@ -3145,4 +3145,22 @@ p:hover ~ .cursor{
   height: 70px;
   background: rgba(255, 255, 255, 0.219);
   z-index: 18;
+}
+
+
+.wors {
+  padding: 40px 0;
+ }
+
+@media only screen and (max-width: 991px), only screen and (max-device-width: 991px) {
+  .wors {
+    padding: 20 0; }
+   }
+
+   @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
+     .wors{padding: 40 0;}
+   }
+
+@media only screen and (max-width: 424px), only screen and (max-device-width: 424px) {
+  .wors{padding: 0 0;}
 }
