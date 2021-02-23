@@ -166,6 +166,9 @@
   .testimonials .card:hover .content .imgBx{
     transform: scale(0.8);
   }
+  #android{
+    max-width:80%;
+  }
   @media only screen and (max-width: 767px), only screen and (max-device-width: 767px)
   {
     #banner-part
@@ -175,17 +178,8 @@
     .cursor,.cursor2{
       opacity: 0;
     }
+    #android{
+      max-width:100%;
+    }
   }
- @font-face { font-family: Celtig; src:('wp-content/theme/brabus/fonts/CELTG___.TTF');}
- @font-face { font-family: AunchantedBold; src:('wp-content/theme/brabus/fonts/AunchantedBold.ttf');}
- @font-face { font-family: abaddon; src:('wp-content/theme/brabus/fonts/abaddon.TTF');}
- 
- #ts-t{
-   font-family: Celtig;
- }
- #ts-e{
-  font-family: abaddon;
- }
- #ts-s{
-  font-family: AunchantedBold;
- }
+
