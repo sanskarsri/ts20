@@ -169,6 +169,11 @@
   #android{
     max-width:80%;
   }
+  #registration-part
+  {
+    font-weight: 700;
+    padding-left: 45px;
+  }
   @media only screen and (max-width: 767px), only screen and (max-device-width: 767px)
   {
     #banner-part
@@ -181,5 +186,10 @@
     #android{
       max-width:100%;
     }
+    /* #registration-part
+  {
+    position: relative;
+    left: -10vw;
+  } */
   }
 
